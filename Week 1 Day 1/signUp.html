@@ -3,48 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signUp.css">
     <title>Sign Up Form</title>
 </head>
 <body>
-    <header align="center"><h1>Sign Up</h1></header>
-    <form action="#" align="center">
-        <div class="name">
-            <label>First Name</label>
-            <input type="text" name="firstName" placeholder="First Name">
-
-            <label>Last Name</label>
-            <input type="text" name="lastName" placeholder="Last Name">
-        </div>
-        
-        <div class="mobile-number">
-            <label>Mobile Number:</label>
-            <input type="tel" name="mobileNumber" placeholder="Mobile No.">
-        </div>
-
-        <div class="email">
-            <label>Email:</label>
-            <input type="email" name="email" placeholder="Email Address">
-        </div>
-
-        <div class="password">
-            <label>Password:</label>
-            <input type="password" name="password" placeholder="Password">
-
-            <label>Confirm Password:</label>
-            <input type="password" name="confirmPassword" placeholder="Confirm Password">
-        </div>
-
-        <div class="termsAndCondition">
-            <input type="checkbox" name="agreeCheckbox">
-            <label><strong>I Agree</strong></label>
-            <p>By clicking <strong>Register</strong>, you agree to the <a>Terms and Conditions</a> set out by this site, including our Cookie Use</p>
-        </div>
-
-        <span>
-            <button type="submit">Register</button>
-            <button type="submit">Sign In</button>
-        </span>
-
-    </form>
+    <div class="container">
+        <header align="center"><h1>Sign Up</h1></header>
+        <form action="#" align="left">
+            <div class="name">
+                <input type="text" name="firstName" placeholder="First Name">
+                <input type="text" name="lastName" placeholder="Last Name">
+            </div>
+            
+            <div class="mobile-number">
+                <input type="tel" name="mobileNumber" placeholder="Mobile No.">
+            </div>
+    
+            <div class="email">
+                <input type="email" name="email" placeholder="Email Address">
+            </div>
+    
+            <div class="password-field">
+                <input type="password" name="password" placeholder="Password">
+    
+                <input type="password" name="confirmPassword" placeholder="Confirm Password">
+            </div>
+    
+            <div class="terms-and-conditions">
+                <div class="agree-checkbox">
+                    <input type="checkbox" name="agreeCheckbox">
+                    <h2>I Agree</h2>
+                </div>
+                <p>By clicking <strong class="register-word">Register</strong>, you agree to the <a>Terms and Conditions</a> set out by this site, including our Cookie Use</p>
+            </div>
+    
+            <div class="create-button">
+                <button type="submit" class="register">Register</button>
+                <button type="submit" class="sign-in">Sign In</button>
+            </div>
+    
+        </form>
+    </div>
 </body>
 </html>

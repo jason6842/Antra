@@ -1,0 +1,102 @@
+body {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container {
+    background: white;
+    padding: 2px;
+    border-radius: 8px;
+    text-align: center;
+    width: 660px;
+    font-family: sans-serif;
+    margin: 50px;
+}
+
+input {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+a {
+    color: blue;
+    font-weight: 600;
+}
+
+.mobile-number input,
+.email input {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin: 15px 0; /* (top-bottom) (left-right) */
+}
+
+.name, .password-field {
+    display:flex;
+    gap: 10px;
+}
+
+.name input, .password-field input {
+    flex: 1; /* Has the same width */
+    margin: 10px 0;
+}
+
+.create-button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.terms-and-conditions {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.agree-checkbox {
+    display: flex;
+    align-items: center; /* Keeps the checkbox and the text in the same line */
+    white-space: nowrap; /* Prevents the text from breaking into a new line */
+}
+
+.terms-and-conditions p{
+    margin: 0;
+}
+
+.create-button button {
+    flex: 1;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+
+.register, .register-word {
+    background-color: #0385df;
+    color: white;
+}
+
+.sign-in {
+    background-color: #09ce57;
+}
+
+.register-word {
+    border-radius: 3px;
+    padding: 2px 6px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+    padding: 0;
+}
