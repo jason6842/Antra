@@ -29,3 +29,14 @@
 
 .video-rec__thumbnail {
 }
+
+.specifishity {
+  width: 500px;
+  height: 500px;
+  display: flex;
+}
+
+img {
+  width: 25%;
+  height: 100%;
+}

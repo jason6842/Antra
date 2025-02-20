@@ -28,26 +28,260 @@
       </li>
       <li>
         <h2>Selectors</h2>
-        <div>Element, Class, ID, Descendant, Group, Attribute</div>
+        <ul>
+          <li>
+            Element - all instances of a specific HTML element "p { color: blue; }"
+          </li>
+          <li>
+            Class - Targets elements that have a specific class assigned ".button { background-color: red; }"
+          </li>
+          <li>
+            ID - Targets a single element with a specific ID. Higher specificity than class "#header { font-size: 24px;}"
+          </li>
+          <li>
+            Descendant - Targets an element that is a descendant of another element "div p { color: green; }"
+          </li>
+          <li>
+            Group - Allows multiple selectors to be grouped together and share the same style "h1, h2, h3 { font-family: Arial, sans-serif }"
+          </li>
+          <li>
+            Attribute - Targets element with specific attributes "input[type='text'] { border: 1px solid black; }"
+          </li>
+        </ul>
       </li>
       <li>
         <h2>Selector Specificity</h2>
         <a href="https://specifishity.com/">fish selector</a>
+        <img src="specifishity.png" alt="specifishity image" class="specifishity" />
       </li>
       <li>
         <h2>responsive Design</h2>
         <ul>
           <li>Media Queries: set break points for different devices</li>
-          <li>Flexbox</li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=phWxA89Dy94" target="_blank">Flexbox</a>
+            <ul>
+              <li>
+                Requires a class="container"
+              </li>
+              <li>
+                display: flex; - creates two axes, main axis and cross axis
+                  <ul>
+                    <li>Items are no longer stacked on top of one another and positions along the main axis (horizontal)</li>
+                  </ul>
+              </li>
+
+              <li>
+                justify-content
+                <ul>
+                  <li>
+                    justify-content: flex-start; - aligns items along the main axis
+                      <ul>
+                        <img src="justify-content-flex-start.png" alt="justify-content flex-start" />
+                      </ul>
+                  </li>
+    
+                  <li>
+                    justify-content: flex-end;
+                      <ul>
+                        <img src="justify-content-flex-end.png" alt="justify-content flex-end" />
+                      </ul>
+                  </li>
+    
+                  <li>
+                    justify-content: flex-center 
+                      <ul>
+                        <img src="justify-content-flex-center.png" alt="justify-content flex-center" />
+                      </ul>
+                  </li>
+    
+                  <li>
+                    justify-content: space-between - evenly spaces items between the first and the last item
+                      <ul>
+                        <img src="justify-content-space-between.png" alt="justify-content space-between" />
+                      </ul>
+                  </li>
+    
+                  
+                  <li>
+                    justify-content: space-around - similar to space-between but also distributes space for the first and last item
+                      <ul>
+                        <img src="justify-content-space-around.png" alt="justify-content space-around" />
+                      </ul>
+                  </li>
+    
+                  <li>
+                    justify-content: space-evenly - evenly distributes space for all elements
+                      <ul>
+                        <img src="justify-content-space-evenly.png" alt="justify-content space-evenly" />
+                      </ul>
+                  </li>
+                </ul>
+              </li>
+              
+
+              <!-- Align Items -->
+
+              <li>
+                align-items - aligns items along the cross axis (vertical)
+                <ul>
+                  <li>
+                    align-items: flex-start; - aligns items along the cross axis
+                      <ul>
+                        <img src="justify-content-space-evenly.png" alt="justify-content space-evenly" />
+                      </ul>
+                  </li>
+    
+                  <li>
+                    align-items: flex-end;
+                      <ul>
+                        <img src="align-items-flex-end.png" alt="align-items flex-end" />
+                      </ul>
+                  </li>
+    
+                  <li>
+                    align-items: flex-center 
+                      <ul>
+                        <img src="align-items-flex-center.png" alt="align-items flex-center" />
+                      </ul>
+                  </li>
+    
+                </ul>
+              </li>
+
+              <!-- Flex Wrap -->
+               <li>
+                flex-wrap: wrap; - allows items to wrap on to the next line when there is no more space available
+                <ul>
+                  <li>
+                    flex-wrap: nowrap; - default value, items will not wrap
+                      <ul>
+                        <img src="flex-wrap-nowrap.png" alt="flex-wrap nowrap" />
+                      </ul>
+                  </li>
+    
+                  <li>
+                    flex-wrap: wrap;
+                      <ul>
+                        <img src="flex-wrap-wrap.png" alt="flex-wrap wrap" />
+                      </ul>
+                  </li>
+               </li>
+
+              <!-- Align Content -->
+               <li>
+                align-content - aligns the flex lines with the flex container, when we have flex-wrap: wrap;
+                <ul>
+                  <li>
+                    align-content: flex-start; - aligns items along the cross axis
+                      <ul>
+                        <img src="align-content-flex-start.png" alt="align-content flex-start" />
+                      </ul>
+                  </li>
+    
+                  <li>
+                    align-content: flex-end;
+                      <ul>
+                        <img src="align-content-flex-end.png" alt="align-content flex-end" />
+                      </ul>
+                  </li>
+    
+                  <li>
+                    align-content: flex-center 
+                      <ul>
+                        <img src="align-content-flex-center.png" alt="align-content flex-center" />
+                      </ul>
+                  </li>
+    
+                  <li>
+                    align-content: space-between - evenly spaces items between the first and the last item
+                      <ul>
+                        <img src="align-content-space-between.png" alt="align-content space-between" />
+                      </ul>
+                  </li>
+    
+                  
+                  <li>
+                    align-content: space-around - similar to space-between but also distributes space for the first and last item
+                      <ul>
+                        <img src="align-content-space-around.png" alt="align-content space-around" />
+                      </ul>
+                  </li>
+    
+                  <!-- <li>
+                    align-content: space-evenly - evenly distributes space for all elements
+                      <ul>
+                        <img src="align-content-space-evenly.png" alt="align-content space-evenly" />
+                      </ul>
+                  </li> -->
+               </li>
+              <!-- Gap -->
+              <li>
+                gap: 10px; - creates space between items
+                <ul>
+                  <img src="gap.png" alt="gap" />
+                </ul>
+              </li>
+
+              <!-- Grow -->
+              <li>
+                flex-grow: 1; - allows item by element to grow and take up available space
+                <ul>
+                  <img src="flex-grow.png" alt="flex grow" />
+                </ul>
+              </li>
+
+              <!-- Shrink -->
+              <li>
+                flex-shrink: 1; - allows item by element to shrink and take up available space
+                <br>
+                flex-shrink: 0; - does not allow item to shrink
+              </li>
+
+              <!-- Basis -->
+              <li>
+                flex-basis: 100px; - sets the initial size of the element 
+              </li>
+              <!-- All Three (grow, shrink, basis) -->
+              <li>
+                flex: 1 1 100px; - shorthand for flex-grow, flex-shrink, flex-basis
+              </li>
+
+              <!-- Align Self -->
+              <li>
+                align-self: flex-start; - allows individual items to be aligned differently than the rest of the items
+                <ul>
+                  <img src="align-self-start.png" alt="align-self start" />
+                </ul>
+                align-self: flex-center; - allows individual items to be aligned differently than the rest of the items
+                <ul>
+                  <img src="align-self-center.png" alt="align-self center" />
+                </ul>
+                align-self: flex-end;
+                <ul>
+                  <img src="align-self-end.png" alt="align-self end" />
+                </ul>
+              </li>
+
+
+              <!-- Order -->
+              <li>
+                order: 1; - allows items to be reordered (should barely be used because it messes with the natural order of the DOM)
+                <ul>
+                  <img src="order.png" alt="order" />
+                </ul>
+              </li>
+            </ul>
+          </li>
           <li>Grid</li>
         </ul>
       </li>
       <li>
         <h2>Some other important things</h2>
         <ul>
-          <li>Box model</li>
+          <li><a href="https://www.youtube.com/watch?v=nSst4-WbEZk" target="_blank">Box Model</a></li>
           <li>CSS Reset: ensuring cross browser compatibility / consistency</li>
-          <li><a href="https://getbem.com">BEM naming methodology</a></li>
+          <li><a href="https://getbem.com" target="_blank">BEM naming methodology</a></li>
           <li>
             <a href="https://roadmap.sh/r/css-6nqag">follow this css roadmap</a>
           </li>
