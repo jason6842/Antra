@@ -4,8 +4,8 @@ const debounceText = document.getElementById("debounce")
 const throttleText = document.getElementById("throttle")
 
 
-// Debounce - instead of running the function every time the input event is triggered, it will wait for a certain amount of time 
-// before running the function
+// Debounce - ensures that a function is executed only after a certain DELAY has passed since the last event was triggered.
+// If the event occurs again before the delay ends, the timer resets.
 
 
 // Update the text content of the debounce element
@@ -35,8 +35,7 @@ function debounce(callback, delay = 1000) {
     }
 }
 
-// Throttle - it delays function call, but instead of waiting for everything is done, as soon as you make the change the request is sent
-// and every second
+// Throttle - ensures that a function runs at most once in a specified amount of time, no matter how many times the event is triggered.
 
 // Throttle function - runs immediately when you call the function
 function throttle(callback, delay = 1000) {
