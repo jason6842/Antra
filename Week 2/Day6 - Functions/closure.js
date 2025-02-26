@@ -58,7 +58,7 @@ counter1.add();
 counter1.add();
 counter1.add();
 counter1.minus();
-counter1.log();
+// counter1.log();
 
 ////////////////////////////////////////////////////////////
 
