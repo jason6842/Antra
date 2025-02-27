@@ -1,0 +1,15 @@
+.alert-danger {
+    background-color: rgb(238, 118, 118);
+    color: rgb(158, 67, 67);
+    text-align: center;
+}
+
+.alert-success {
+    background-color: rgb(14, 184, 14);
+    color: green;
+    text-align: center;
+}
+
+.show-container {
+    visibility: visible;
+}
