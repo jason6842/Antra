@@ -10,8 +10,9 @@ function outerFn() {
   };
 }
 
-// const inner = outerFn();
-// inner();
+const inner = outerFn(); // inner = innerFn()
+console.log(inner); // innerFn()
+inner(); // innerFn()
 
 function getNum() {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // a million elements
@@ -27,8 +28,9 @@ function getNum() {
   return sum;
 }
 
-// const sum = getNum();
-// console.log(arr);
+const sum = getNum();
+console.log(sum); // 55
+// console.log(arr); // ReferenceError: arr is not defined
 
 // one purpose of closure is to create private variables
 function createCounter() {
@@ -54,11 +56,14 @@ function createCounter() {
 }
 
 const counter1 = createCounter();
+console.log(counter1); // { add: [Function: add], minus: [Function: minus], log: [Function: log], reset: [Function: reset] }
 counter1.add();
 counter1.add();
 counter1.add();
 counter1.minus();
 // counter1.log();
+// the count variable is private, and it can be found within each function's scope
+// closure is one of its 3 scopes, global, script, and closure
 
 ////////////////////////////////////////////////////////////
 
@@ -88,8 +93,10 @@ const gamble = limitedFn((min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }, 3);
 
-// sayHi("Jack");
-// sayHi("John");
+sayHi("Jack");
+sayHi("John");
+sayHi("Jack");
+sayHi("John");
 
 // console.log(gamble(1, 10));
 // console.log(gamble(1, 10));
