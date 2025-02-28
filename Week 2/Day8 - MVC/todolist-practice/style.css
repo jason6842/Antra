@@ -1,0 +1,79 @@
+
+.todo-container {
+    background: white;
+    padding: 2px;
+    border-radius: 8px;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;  /* Centers the container*/
+    border: 1px solid gray;
+}
+
+.todo-form, .todos-list {
+    background: rgb(231, 184, 129);
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.todo-form {
+    display: flex; /* input covers the whole div/container */
+}
+
+.todos-list {
+    padding: 10px;
+}
+
+input[type="checkbox"] {
+    width: 1em;
+    height: 1em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: 1.5px solid gray;
+    cursor: pointer; 
+}
+
+.todo-input {
+    flex: 1;
+    padding: 8px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border: none;
+    background-color: rgb(231, 184, 129);
+}
+
+.add-todo {
+    padding: 8px 12px;
+    border: none;
+    background-color: rgb(83, 48, 8);
+    color: white;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    margin: 3px;
+}
+
+/* Expand the text */
+.todo-task {
+    flex: 1;
+}
+
+.todo-delete-btn, .todo-edit-btn {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer; /* Cursor changes when hover*/
+    padding: 0 2px; 
+}
+
+.add-todo {
+    cursor:pointer;
+}
