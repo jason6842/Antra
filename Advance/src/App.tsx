@@ -5,6 +5,7 @@ import Ternary from "./components/Ternary";
 // when importing from a folder, it will look for the index file
 // when importing a "default export", you can name it whatever you want
 import DescribingTheUI from "./DescribingTheUI";
+import { Named1, Named2 } from "./components/Named.tsx"
 
 function App() {
   const htmlInJSX = <h4>You can have html in JSX</h4>
@@ -34,6 +35,8 @@ function App() {
         <Ternary></Ternary>
         <List></List>
         <Planet></Planet>
+        <Named1></Named1>
+        <Named2></Named2>
     </div>
   );
 }
