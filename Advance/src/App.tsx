@@ -7,6 +7,9 @@ import Ternary from "./components/Ternary";
 import DescribingTheUI from "./DescribingTheUI";
 import { Named1, Named2 } from "./components/Named.tsx"
 import Profile from "./components/ChildrenProp/Profile.tsx";
+import Pure from "./components/Pure.tsx";
+import Impure from "./components/Impure.tsx";
+
 
 function App() {
   const htmlInJSX = <h4>You can have html in JSX</h4>
@@ -39,6 +42,9 @@ function App() {
         <Named1></Named1>
         <Named2></Named2>
         <Profile></Profile>
+        <Pure></Pure>
+        <Impure></Impure>
+        
     </div>
   );
 }
