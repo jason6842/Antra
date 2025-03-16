@@ -9,6 +9,8 @@ import { Named1, Named2 } from "./components/Named.tsx"
 import Profile from "./components/ChildrenProp/Profile.tsx";
 import Pure from "./components/Pure.tsx";
 import Impure from "./components/Impure.tsx";
+import StateApp from "./components/StatesInReact/StateApp.tsx";
+import CounterApp from "./components/StatesInReact/CounterApp.tsx";
 
 
 function App() {
@@ -27,11 +29,11 @@ function App() {
 
   return (
     <div>
-      <DescribingTheUI />
+      {/* <DescribingTheUI />
         {htmlInJSX}
-        {user}
+        {user} */}
         {/* number uses { 10 } */}
-        <User name="Test1" age={25} email="test1@test1.com"/>
+        {/* <User name="Test1" age={25} email="test1@test1.com"/>
         <User name="Test2" age={27} email="test2@test2.com"/>
         <Job salary={90000} position="Senior SDE" company="Amazon"/>
         <Job salary={12000} position="Junior SDE" company="Google"/>
@@ -43,8 +45,9 @@ function App() {
         <Named2></Named2>
         <Profile></Profile>
         <Pure></Pure>
-        <Impure></Impure>
-        
+        <Impure></Impure> */}
+        <StateApp />
+        <CounterApp />
     </div>
   );
 }
