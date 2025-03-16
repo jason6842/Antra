@@ -11,6 +11,7 @@ import Pure from "./components/Pure.tsx";
 import Impure from "./components/Impure.tsx";
 import StateApp from "./components/StatesInReact/StateApp.tsx";
 import CounterApp from "./components/StatesInReact/CounterApp.tsx";
+import CrudApp from "./components/CRUD/CrudApp.tsx";
 
 
 function App() {
@@ -46,8 +47,9 @@ function App() {
         <Profile></Profile>
         <Pure></Pure>
         <Impure></Impure> */}
-        <StateApp />
-        <CounterApp />
+        {/* <StateApp />
+        <CounterApp /> */}
+        <CrudApp />
     </div>
   );
 }
