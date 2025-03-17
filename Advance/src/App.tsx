@@ -12,6 +12,7 @@ import Impure from "./components/Impure.tsx";
 import StateApp from "./components/StatesInReact/StateApp.tsx";
 import CounterApp from "./components/StatesInReact/CounterApp.tsx";
 import CrudApp from "./components/CRUD/CrudApp.tsx";
+import ClassComponentsDemo from "./class/index.tsx";
 
 
 function App() {
@@ -49,7 +50,8 @@ function App() {
         <Impure></Impure> */}
         {/* <StateApp />
         <CounterApp /> */}
-        <CrudApp />
+        {/* <CrudApp /> */}
+        <ClassComponentsDemo />
     </div>
   );
 }
