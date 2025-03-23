@@ -13,6 +13,8 @@ import StateApp from "./components/StatesInReact/StateApp.tsx";
 import CounterApp from "./components/StatesInReact/CounterApp.tsx";
 import CrudApp from "./components/CRUD/CrudApp.tsx";
 import ClassComponentsDemo from "./class/index.tsx";
+import AddingInteractivity from "./AddingInteractivity/index.tsx";
+import ManagingState from "./ManagingState/index.tsx";
 
 
 function App() {
@@ -51,7 +53,9 @@ function App() {
         {/* <StateApp />
         <CounterApp /> */}
         {/* <CrudApp /> */}
-        <ClassComponentsDemo />
+        {/* <ClassComponentsDemo /> */}
+        {/* <AddingInteractivity /> */}
+        <ManagingState />
     </div>
   );
 }

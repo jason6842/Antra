@@ -8,10 +8,9 @@ type ClassCounterState = {
   count: number;
 };
 
-export class ClassCounter extends React.Component<
-  ClassCounterProps,
-  ClassCounterState
-> {
+export class ClassCounter extends React.Component<ClassCounterProps,ClassCounterState> {
+  // temporary
+  id: ReturnType<typeof setInterval> | undefined;
   constructor(props: any) {
     super(props);
     this.handleAdd = this.handleAdd.bind(this);
@@ -24,6 +23,9 @@ export class ClassCounter extends React.Component<
   // Called after the component has been mounted (inserted into the DOM)
   componentDidMount(): void {
     console.log("component mounted");
+    this.id = setInterval(() => {
+      console.log(this.state.count);
+    }, 1000);
   }
   // Called after the component updates (re-renders due to state or props changes)
   componentDidUpdate(): void {
@@ -31,6 +33,7 @@ export class ClassCounter extends React.Component<
   }
   // Called just before the component is unmounted (removed from the DOM)
   componentWillUnmount(): void {
+    clearInterval(this.id);
     console.log("component unmounted");
   }
 
