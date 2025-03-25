@@ -17,6 +17,7 @@ import AddingInteractivity from "./AddingInteractivity/index.tsx";
 import ManagingState from "./ManagingState/index.tsx";
 import PracticeProblems from "./PracticeProblems/index.tsx";
 import ToDoList from "./PracticeProblems/ToDoList/ToDoList.tsx";
+import { Parent } from "./ContextAPI/ContextExample1.tsx";
 
 
 function App() {
@@ -59,7 +60,8 @@ function App() {
         {/* <AddingInteractivity /> */}
         {/* <ManagingState /> */}
         {/* <PracticeProblems /> */}
-        <ToDoList />
+        {/* <ToDoList /> */}
+        <Parent />
     </div>
   );
 }
