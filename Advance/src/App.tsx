@@ -15,6 +15,8 @@ import CrudApp from "./components/CRUD/CrudApp.tsx";
 import ClassComponentsDemo from "./class/index.tsx";
 import AddingInteractivity from "./AddingInteractivity/index.tsx";
 import ManagingState from "./ManagingState/index.tsx";
+import PracticeProblems from "./PracticeProblems/index.tsx";
+import ToDoList from "./PracticeProblems/ToDoList/ToDoList.tsx";
 
 
 function App() {
@@ -55,7 +57,9 @@ function App() {
         {/* <CrudApp /> */}
         {/* <ClassComponentsDemo /> */}
         {/* <AddingInteractivity /> */}
-        <ManagingState />
+        {/* <ManagingState /> */}
+        {/* <PracticeProblems /> */}
+        <ToDoList />
     </div>
   );
 }
