@@ -18,6 +18,8 @@ import ManagingState from "./ManagingState/index.tsx";
 import PracticeProblems from "./PracticeProblems/index.tsx";
 import ToDoList from "./PracticeProblems/ToDoList/ToDoList.tsx";
 import { Parent } from "./ContextAPI/ContextExample1.tsx";
+import ReducerApp from "./useReducerHook/App.tsx";
+import TodoReducerApp from "./useReducerHook/Todos.tsx";
 
 
 function App() {
@@ -61,7 +63,9 @@ function App() {
         {/* <ManagingState /> */}
         {/* <PracticeProblems /> */}
         {/* <ToDoList /> */}
-        <Parent />
+        {/* <Parent /> */}
+        {/* <ReducerApp /> */}
+        <TodoReducerApp />
     </div>
   );
 }
