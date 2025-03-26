@@ -20,6 +20,7 @@ import ToDoList from "./PracticeProblems/ToDoList/ToDoList.tsx";
 import { Parent } from "./ContextAPI/ContextExample1.tsx";
 import ReducerApp from "./useReducerHook/App.tsx";
 import TodoReducerApp from "./useReducerHook/Todos.tsx";
+import ReducerAndContextApp from "./useReducerWithuseContext/App.tsx";
 
 
 function App() {
@@ -65,7 +66,8 @@ function App() {
         {/* <ToDoList /> */}
         {/* <Parent /> */}
         {/* <ReducerApp /> */}
-        <TodoReducerApp />
+        {/* <TodoReducerApp /> */}
+        <ReducerAndContextApp />
     </div>
   );
 }
