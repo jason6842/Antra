@@ -21,6 +21,8 @@ import { Parent } from "./ContextAPI/ContextExample1.tsx";
 import ReducerApp from "./useReducerHook/App.tsx";
 import TodoReducerApp from "./useReducerHook/Todos.tsx";
 import ReducerAndContextApp from "./useReducerWithuseContext/App.tsx";
+import ContextToDoList from "./PracticeProblems/ContextToDoList/ToDoList.tsx";
+import { TasksProvider } from "./PracticeProblems/ContextToDoList/TasksProvider.tsx";
 
 
 function App() {
@@ -67,7 +69,11 @@ function App() {
         {/* <Parent /> */}
         {/* <ReducerApp /> */}
         {/* <TodoReducerApp /> */}
-        <ReducerAndContextApp />
+        {/* <ReducerAndContextApp /> */}
+        {/* <ContextToDoList /> */}
+        <TasksProvider>
+          <ContextToDoList />
+        </TasksProvider>
     </div>
   );
 }
