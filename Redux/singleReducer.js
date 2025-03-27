@@ -3,7 +3,6 @@
 // A reducer which actually carries out the state transition depending on the action.
 const redux = require('redux');
 const createStore = redux.createStore
-const combineReducers = redux.combineReducers
 
 const BUY_CAKE = 'BUY_CAKE'
 const BUY_ICE_CREAM = 'BUY_ICE_CREAM'
@@ -23,29 +22,20 @@ function buyIceCream() {
 }
 
 // (previousState, action) => newState
-const initialCakeState = {
-    numOfCakes: 10
-}
 
-const initialIceCreamState = {
+const initialState = {
+    numOfCakes: 10,
     numOfIceCreams: 20
 }
 
 // Application State
-const cakeReducer = (state = initialCakeState, action) => {
+const reducer = (state = initialState, action) => {
     switch(action.type) {
         case BUY_CAKE:
             return {
                 ...state,
                 numOfCakes: state.numOfCakes - 1
             };
-        default:
-            return state;
-    }
-}
-
-const iceCreamReducer = (state = initialIceCreamState, action) => {
-    switch(action.type) {
         case BUY_ICE_CREAM:
             return {
                 ...state,
@@ -56,14 +46,8 @@ const iceCreamReducer = (state = initialIceCreamState, action) => {
     }
 }
 
-// combine reducers
-const rootReducer = combineReducers({
-    cake: cakeReducer,
-    iceCream: iceCreamReducer
-})
-
 // store holds application state
-const store = createStore(rootReducer);
+const store = createStore(reducer);
 
 // current state of the store
 console.log('Initial state', store.getState());
@@ -81,4 +65,3 @@ store.dispatch(buyIceCream());
 
 // unsubscribe from the store
 unsubscribe();
-
