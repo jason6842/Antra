@@ -17,10 +17,10 @@ function mapStateToProps(state) {
     }
 }
 
-function matchDispatchToProps(dispatch) {
+function mapDispatchToProps(dispatch) {
     return {
         buyIceCream: () => dispatch(buyIceCream())
     }
 }
 
-export default connect(mapStateToProps, matchDispatchToProps)(IceCreamContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(IceCreamContainer)
