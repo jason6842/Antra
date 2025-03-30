@@ -23,6 +23,7 @@ import TodoReducerApp from "./useReducerHook/Todos.tsx";
 import ReducerAndContextApp from "./useReducerWithuseContext/App.tsx";
 import ContextToDoList from "./PracticeProblems/ContextToDoList/ToDoList.tsx";
 import { TasksProvider } from "./PracticeProblems/ContextToDoList/TasksProvider.tsx";
+import ModalApp from "./ModalExample/ModalApp.tsx";
 
 
 function App() {
@@ -71,9 +72,11 @@ function App() {
         {/* <TodoReducerApp /> */}
         {/* <ReducerAndContextApp /> */}
         {/* <ContextToDoList /> */}
-        <TasksProvider>
+        {/* <TasksProvider>
           <ContextToDoList />
-        </TasksProvider>
+        </TasksProvider> */}
+        <ModalApp />
+        
     </div>
   );
 }
