@@ -33,7 +33,7 @@ export default function NewModal({open, children, onClose}: any) {
         {children}
       </div>
     </>,
-    document.getElementById('portal')!
+    document.body
   )
   // portal is located in index.html
 }
