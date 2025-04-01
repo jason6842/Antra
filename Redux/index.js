@@ -2,8 +2,12 @@
 // An action that describes the changes in the state of the application.
 // A reducer which actually carries out the state transition depending on the action.
 const redux = require('redux');
+const reduxLogger = require('redux-logger')
 const createStore = redux.createStore
 const combineReducers = redux.combineReducers
+const applyMiddleware = redux.applyMiddleware
+const logger = reduxLogger.createLogger()
+
 
 const BUY_CAKE = 'BUY_CAKE'
 const BUY_ICE_CREAM = 'BUY_ICE_CREAM'
@@ -63,13 +67,14 @@ const rootReducer = combineReducers({
 })
 
 // store holds application state
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, applyMiddleware(logger));
 
 // current state of the store
 console.log('Initial state', store.getState());
 
 // allows the app to subscribe to changes in the store
-const unsubscribe = store.subscribe(() => console.log('Updated state', store.getState())); // returns the unsubscribe function
+// const unsubscribe = store.subscribe(() => console.log('Updated state', store.getState())); // returns the unsubscribe function
+const unsubscribe = store.subscribe(() => {})
 
 // store provides dispatch method to update the state
 store.dispatch({type: BUY_CAKE}); // same
