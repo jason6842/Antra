@@ -24,6 +24,7 @@ import ReducerAndContextApp from "./useReducerWithuseContext/App.tsx";
 import ContextToDoList from "./PracticeProblems/ContextToDoList/ToDoList.tsx";
 import { TasksProvider } from "./PracticeProblems/ContextToDoList/TasksProvider.tsx";
 import ModalApp from "./ModalExample/ModalApp.tsx";
+import ReduxApp from "./ReduxApp/index.tsx";
 
 
 function App() {
@@ -75,8 +76,8 @@ function App() {
         {/* <TasksProvider>
           <ContextToDoList />
         </TasksProvider> */}
-        <ModalApp />
-        
+        {/* <ModalApp /> */}
+        <ReduxApp />
     </div>
   );
 }
