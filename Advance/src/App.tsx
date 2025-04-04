@@ -25,6 +25,7 @@ import ContextToDoList from "./PracticeProblems/ContextToDoList/ToDoList.tsx";
 import { TasksProvider } from "./PracticeProblems/ContextToDoList/TasksProvider.tsx";
 import ModalApp from "./ModalExample/ModalApp.tsx";
 import ReduxApp from "./ReduxApp/index.tsx";
+import DebounceApp from "./DebounceAndThrottle/DebounceApp.tsx";
 
 
 function App() {
@@ -77,7 +78,8 @@ function App() {
           <ContextToDoList />
         </TasksProvider> */}
         {/* <ModalApp /> */}
-        <ReduxApp />
+        {/* <ReduxApp /> */}
+        <DebounceApp />
     </div>
   );
 }

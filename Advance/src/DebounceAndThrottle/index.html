@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input" />
+  </body>
+
+  <script>
+    let timeoutId;
+    const debounce = (callback, delay) => {
+      return (...args) => {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+            callback(...args);
+        }, delay);
+      };
+    };
+
+    const debounceFn = debounce((val1, val2) => {
+        console.log(val1);
+        console.log(val2);
+    }, 1000)
+
+    const inputElement = document.getElementById("input");
+    inputElement.addEventListener("keyup", (e) => {
+      debounceFn(e.target.value, "george");
+    });
+  </script>
+</html>
