@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import withCounter from "./WithCounter";
+import withCounter from "./withCounter";
 
 function ClickCounter({count, incrementCount, name}: any) {
 //   const [count, setCount] = useState(0);
