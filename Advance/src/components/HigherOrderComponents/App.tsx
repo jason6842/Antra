@@ -2,6 +2,8 @@ import PostsList from "./PostsList"
 import ClickCounter from "./ClickCounter"
 import HoverCounter from "./HoverCounter"
 import TodosList from "./TodosList"
+import ComponentA from "./ComponentA"
+import ComponentB from "./ComponentB"
 // import withFetch from "./withFetch"
 
 // props passed into these components won't work because the props are passed
@@ -15,6 +17,8 @@ function HigherOrderComponentApp() {
         {/* <NewComponent /> */}
         <PostsList />
         <TodosList />
+        <ComponentA />
+        <ComponentB />
     </div>
   )
 }
