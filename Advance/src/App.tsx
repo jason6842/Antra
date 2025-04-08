@@ -26,6 +26,9 @@ import { TasksProvider } from "./PracticeProblems/ContextToDoList/TasksProvider.
 import ModalApp from "./ModalExample/ModalApp.tsx";
 import ReduxApp from "./ReduxApp/index.tsx";
 import DebounceApp from "./DebounceAndThrottle/DebounceApp.tsx";
+import ClickCounter from "./components/HigherOrderComponents/ClickCounter.tsx";
+import HoverCounter from "./components/HigherOrderComponents/HoverCounter.tsx";
+import HigherOrderComponentApp from "./components/HigherOrderComponents/App.tsx";
 
 
 function App() {
@@ -79,7 +82,8 @@ function App() {
         </TasksProvider> */}
         {/* <ModalApp /> */}
         {/* <ReduxApp /> */}
-        <DebounceApp />
+        {/* <DebounceApp /> */}
+        <HigherOrderComponentApp />
     </div>
   );
 }
