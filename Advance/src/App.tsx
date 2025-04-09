@@ -30,6 +30,7 @@ import ClickCounter from "./components/HigherOrderComponents/ClickCounter.tsx";
 import HoverCounter from "./components/HigherOrderComponents/HoverCounter.tsx";
 import HigherOrderComponentApp from "./components/HigherOrderComponents/App.tsx";
 import HOC from "./components/HOC/index.tsx";
+import UseRefApp from "./components/CustomHooks/useRef/App.tsx";
 
 
 function App() {
@@ -84,8 +85,9 @@ function App() {
         {/* <ModalApp /> */}
         {/* <ReduxApp /> */}
         {/* <DebounceApp /> */}
-        <HigherOrderComponentApp />
-        <HOC />
+        {/* <HigherOrderComponentApp /> */}
+        {/* <HOC /> */}
+        <UseRefApp />
     </div>
   );
 }
