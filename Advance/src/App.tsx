@@ -29,6 +29,7 @@ import DebounceApp from "./DebounceAndThrottle/DebounceApp.tsx";
 import ClickCounter from "./components/HigherOrderComponents/ClickCounter.tsx";
 import HoverCounter from "./components/HigherOrderComponents/HoverCounter.tsx";
 import HigherOrderComponentApp from "./components/HigherOrderComponents/App.tsx";
+import HOC from "./components/HOC/index.tsx";
 
 
 function App() {
@@ -84,6 +85,7 @@ function App() {
         {/* <ReduxApp /> */}
         {/* <DebounceApp /> */}
         <HigherOrderComponentApp />
+        <HOC />
     </div>
   );
 }
