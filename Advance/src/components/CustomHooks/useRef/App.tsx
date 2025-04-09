@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import FocusInput from './FocusInput';
 import ClassTimer from './ClassTimer';
 import HookTimer from './HookTimer';

@@ -31,6 +31,8 @@ import HoverCounter from "./components/HigherOrderComponents/HoverCounter.tsx";
 import HigherOrderComponentApp from "./components/HigherOrderComponents/App.tsx";
 import HOC from "./components/HOC/index.tsx";
 import UseRefApp from "./components/CustomHooks/useRef/App.tsx";
+import DocTitleOne from "./components/CustomHooks/useDocumentTitle/DocTitleOne.tsx";
+import DocTitleTwo from "./components/CustomHooks/useDocumentTitle/DocTitleTwo.tsx";
 
 
 function App() {
@@ -87,7 +89,9 @@ function App() {
         {/* <DebounceApp /> */}
         {/* <HigherOrderComponentApp /> */}
         {/* <HOC /> */}
-        <UseRefApp />
+        {/* <UseRefApp /> */}
+        <DocTitleOne />
+        <DocTitleTwo />
     </div>
   );
 }
