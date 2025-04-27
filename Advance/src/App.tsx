@@ -33,6 +33,7 @@ import HOC from "./components/HOC/index.tsx";
 import UseRefApp from "./components/CustomHooks/useRef/App.tsx";
 import DocTitleOne from "./components/CustomHooks/useDocumentTitle/DocTitleOne.tsx";
 import DocTitleTwo from "./components/CustomHooks/useDocumentTitle/DocTitleTwo.tsx";
+import Performance from "./Performance/index.tsx";
 
 
 function App() {
@@ -90,8 +91,9 @@ function App() {
         {/* <HigherOrderComponentApp /> */}
         {/* <HOC /> */}
         {/* <UseRefApp /> */}
-        <DocTitleOne />
-        <DocTitleTwo />
+        {/* <DocTitleOne /> */}
+        {/* <DocTitleTwo /> */}
+        <Performance />
     </div>
   );
 }
