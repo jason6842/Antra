@@ -34,6 +34,8 @@ import UseRefApp from "./components/CustomHooks/useRef/App.tsx";
 import DocTitleOne from "./components/CustomHooks/useDocumentTitle/DocTitleOne.tsx";
 import DocTitleTwo from "./components/CustomHooks/useDocumentTitle/DocTitleTwo.tsx";
 import Performance from "./Performance/index.tsx";
+import CodeSplittingApp from "./CodeSplitting/App.tsx";
+import { BrowserRouter } from "react-router-dom";
 
 
 function App() {
@@ -93,7 +95,10 @@ function App() {
         {/* <UseRefApp /> */}
         {/* <DocTitleOne /> */}
         {/* <DocTitleTwo /> */}
-        <Performance />
+        {/* <Performance /> */}
+        <BrowserRouter>
+          <CodeSplittingApp />
+        </BrowserRouter>
     </div>
   );
 }
